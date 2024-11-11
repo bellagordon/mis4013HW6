@@ -13,9 +13,7 @@
 
   <ul class="list"></ul>
 
-</div>
-
-var options = {
+  var options = {
   valueNames: [ 'name', 'born' ],
   // Since there are no elements in the list, this will be used as template.
   item: '<li><h3 class="name"></h3><p class="born"></p></li>'
@@ -42,5 +40,11 @@ userList.add({
   name: 'Gustaf Lindqvist',
   born: 1983
 });
+
+</div>
+
+  
+
+
 </body>
 </html>
