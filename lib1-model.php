@@ -12,7 +12,8 @@
   </button>
 
   <ul class="list"></ul>
-
+</div>
+<div>
   var options = {
   valueNames: [ 'name', 'born' ],
   // Since there are no elements in the list, this will be used as template.
