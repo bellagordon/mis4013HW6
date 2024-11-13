@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Referencing HTML Elements</title>
-    <script src="dom-tools.js"></script> <!-- Ensure the path is correct -->
+  <script src="js/dom-tools.js"></script>
     <script>
       function addFavoriteAnimalList() {
         // Create the list using the function from dom-tools.js
