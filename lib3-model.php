@@ -2,7 +2,6 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
     <style>
-      /* Center everything on the page */
       body {
         display: flex;
         flex-direction: column;
@@ -13,8 +12,8 @@
       }
 
       h1 {
-        font-size: 2rem;  /* Set title font size */
-        margin-bottom: 20px; /* Space between title and canvas */
+        font-size: 2rem;  
+        margin-bottom: 20px; 
       }
 
     </style>
