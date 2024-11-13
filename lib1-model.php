@@ -1,27 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <title>Library 1</title>
 </head>
 <body>
-<div id="users">
-
-  <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="name">
-    Sort
-  </button>
-
-  <ul class="list"></ul>
-</div>
-<div>
-  var options = {
+var options = {
   valueNames: [ 'name', 'born' ],
-  // Since there are no elements in the list, this will be used as template.
   item: '<li><h3 class="name"></h3><p class="born"></p></li>'
 };
-
-var values = [
-  {
+<script>
+var values = [{
     name: 'Jonny Strömberg',
     born: 1986
   },
@@ -32,20 +20,14 @@ var values = [
   {
     name: 'Martina Elm',
     born: 1986
-  }
-];
+}];
 
 var userList = new List('users', options, values);
 
 userList.add({
-  name: 'Gustaf Lindqvist',
+  name: "Gustaf Lindqvist",
   born: 1983
 });
-
-</div>
-
-  
-
-
+</script>
 </body>
 </html>
