@@ -23,7 +23,7 @@
           <a class="nav-link" href="lib1.php">Library 1</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="func2.php">Library 2</a>
+          <a class="nav-link" href="lib2.php">Library 2</a>
         </li>  
         <li class="nav-item">
           <a class="nav-link" href="func3.php">Library 3</a>
