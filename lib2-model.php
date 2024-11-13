@@ -10,6 +10,7 @@
     }
     li {
       font-size: 20px;  
+      font-weight: normal; 
     }
 
     .title-style {
