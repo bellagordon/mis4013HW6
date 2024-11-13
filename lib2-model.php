@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
   <title>Library 1</title>
-   <script src="dom-tools.js">
-     function createUlElement(items) {
+  <script>
+    function addFavoriteAnimalList() {
+      // Create the list as an HTML string
+      const items = ['lions', 'tigers', 'bears'];
       const ul = document.createElement('ul');
-      items.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item;
-        ul.appendChild(li);
-        });
-        return ul;
-    }    
-   </script>
-    <script>
-      function addFavoriteAnimalList() {
-        const ulElement = createUlElement(['lions', 'tigers', 'bears']);
-        const animalContainer = document.getElementById('animal-container');
-        animalContainer.appendChild(ulElement);
-      }
-    </script>
+
+      // Generate <li> elements and append them to the <ul> using innerHTML
+      ul.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+      
+      // Find the container and append the <ul>
+      const animalContainer = document.getElementById('animal-container');
+      animalContainer.appendChild(ul);
+    }
+  </script>
 </head>
-  <body onload="addFavoriteAnimalList();">
-    <p>These are my favorite animals:</p>
-    <div id="animal-container"></div>
+<body onload="addFavoriteAnimalList();">
+  <p>These are my favorite animals:</p>
+  <div id="animal-container"></div>
 </body>
 </html>
