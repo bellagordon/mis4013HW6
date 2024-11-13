@@ -25,20 +25,20 @@
 <script>
   var options = {
     valueNames: ['name', 'born'],
-    item: '<li><h3 class="name"></h3><p class="born"></p></li>'
+    item: '<li><h3 class="name"></h3><p class="born">Born - </p></li>'  
   };
 
   var values = [
-    { name: 'Jonny Strömberg', born: 1986 },
-    { name: 'Jonas Arnklint', born: 1985 },
-    { name: 'Martina Elm', born: 1986 }
+    { name: 'John Doe', born: 1998 },
+    { name: 'Jane Doe', born: 1976 },
+    { name: 'Danny Smith', born: 2006 }
   ];
 
   var userList = new List('users', options, values);
 
   userList.add({
-    name: "Gustaf Lindqvist",
-    born: 1983
+    name: "Sally Brown",
+    born: 1985
   });
 </script>
 
