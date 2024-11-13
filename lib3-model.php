@@ -2,11 +2,11 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
     <style>
-      body {
+       body {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: center; 
+        justify-content: flex-start; 
         height: 100vh;
         margin: 0;
       }
