@@ -21,14 +21,14 @@
   </style>
   <script>
     function addFavoriteAnimalList() {
-      const ulElement = createUlElement(['lions', 'tigers', 'bears']);
+      const ulElement = createUlElement(['Pandas', 'Giraffes', 'Zebras']);
       const animalContainer = document.getElementById('animal-container');
       animalContainer.appendChild(ulElement);
     }
   </script>
 </head>
 <body class="title-style" onload="addFavoriteAnimalList();">
-  <p>These are my favorite animals:</p>
+  <p>These are my favorite zoo animals:</p>
   <div id="animal-container"></div>
 </body>
 </html>
