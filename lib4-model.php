@@ -10,15 +10,18 @@
           ['Class',     4],
           ['Eat',      2],
           ['Study',  4],
-          ['Watch TV', 2],
+          ['Watch TV', 3],
           ['Scroll on Phone', 3],
-          ['Workout', 1],
           ['Sleep', 8]
         ]);
 
-        var options = {
+     var options = {
           title: 'Daily Routine',
-          pieHole: 0.4,
+          titleTextStyle: {
+            fontWeight: 'bold', // Make the title bold
+            fontSize: 24,       // Optionally adjust the font size
+          },
+          pieHole: 0.4
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
