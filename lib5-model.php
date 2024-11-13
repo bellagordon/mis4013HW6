@@ -9,13 +9,20 @@
 
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['RU', 700]
+          ['Country', 'Population with Brown Hair (in Hundreds)'],
+          ['Germany', 100],
+          ['United States', 570],
+          ['Brazil', 650],
+          ['Canada', 620],
+          ['France', 300],
+          ['Russia', 550],
+          ['Mexico', 600],
+          ['Italy', 700],
+          ['Australia', 200],
+          ['Egypt', 650],
+          ['Sweden', 200],
+          ['Ireland', 150],
+          ['China', 700],
         ]);
 
         var options = {};
