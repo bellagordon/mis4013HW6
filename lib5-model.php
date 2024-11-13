@@ -2,42 +2,31 @@
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load("current", {packages:["calendar"]});
-      google.charts.setOnLoadCallback(drawChart);
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
 
-   function drawChart() {
-       var dataTable = new google.visualization.DataTable();
-       dataTable.addColumn({ type: 'date', id: 'Date' });
-       dataTable.addColumn({ type: 'number', id: 'Won/Loss' });
-       dataTable.addRows([
-          [ new Date(2023, 3, 13), 37032 ],
-          [ new Date(2023, 3, 14), 38024 ],
-          [ new Date(2023, 3, 15), 38024 ],
-          [ new Date(2023, 3, 16), 38108 ],
-          [ new Date(2023, 3, 17), 38229 ],
-          // Many rows omitted for brevity.
-          [ new Date(2024, 9, 4), 38177 ],
-          [ new Date(2024, 9, 5), 38705 ],
-          [ new Date(2024, 9, 12), 38210 ],
-          [ new Date(2024, 9, 13), 38029 ],
-          [ new Date(2024, 9, 19), 38823 ],
-          [ new Date(2024, 9, 23), 38345 ],
-          [ new Date(2024, 9, 24), 38436 ],
-          [ new Date(2024, 9, 30), 38447 ]
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
         ]);
 
-       var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+        var options = {};
 
-       var options = {
-         title: "Red Sox Attendance",
-         height: 350,
-       };
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
-       chart.draw(dataTable, options);
-   }
+        chart.draw(data, options);
+      }
     </script>
   </head>
   <body>
-    <div id="calendar_basic" style="width: 1000px; height: 350px;"></div>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
   </body>
 </html>
