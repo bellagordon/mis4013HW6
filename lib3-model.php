@@ -14,6 +14,6 @@
     </script>
   </head>
   <body>
-    <h1>My Sketch</h1>
+    <h1>Fun & Random!</h1>
   </body>
 </html>
