@@ -4,11 +4,11 @@
   <title>Library 1</title>
 </head>
 <body>
+<script>
 var options = {
   valueNames: [ 'name', 'born' ],
   item: '<li><h3 class="name"></h3><p class="born"></p></li>'
 };
-<script>
 var values = [{
     name: 'Jonny Strömberg',
     born: 1986
