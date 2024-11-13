@@ -26,7 +26,7 @@
           <a class="nav-link" href="lib2.php">Library 2</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link" href="func3.php">Library 3</a>
+          <a class="nav-link" href="lib3.php">Library 3</a>
         </li>
            <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="func4.php">Library 4</a>
